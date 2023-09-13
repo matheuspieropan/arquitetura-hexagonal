@@ -10,6 +10,8 @@ Essa pasta contém toda lógica de negócio da nossa aplicação. Ela é agnóst
 
 ##### - *Adaptadores*
 
+- *API REST*
+
 Essa pasta contém uma implementação utilizando api rest com framework Spring. Nesse projeto adicionamos a lib da nossa aplicação  e fizemos a implementação (adapter) das portas fornecidas pela aplicação. 
 
 Esse adaptador fornece o endpoint /usuario que pode ser consumido com a seguinte estrutura JSON
@@ -21,3 +23,8 @@ Esse adaptador fornece o endpoint /usuario que pode ser consumido com a seguinte
   "senha": "sua_senha_secreta"
 }
 ```
+- *PROMPT*
+
+Essa pasta contém a implementação utilizando prompt. Nesse projeto adicionamos a lib da nossa aplicação e fizemos a implementação (adapter) das portas fornecidas pela aplicação.
+
+Basta executar o programa e criar seu usuário por linha de comando. Será  informado o email, login e senha. Uma vez validado na regra de negócio, usuário será salvo num arquivo CSV no diretório raíz da aplicação.
