@@ -1,6 +1,7 @@
 package com.pieropan.apirest.controller;
 
 import br.pieropan.application.request.UsuarioRequest;
+import br.pieropan.application.response.UsuarioResponse;
 import br.pieropan.application.service.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -17,7 +18,7 @@ public class UsuarioController {
     UsuarioService usuarioService;
 
     @PostMapping
-    public ResponseEntity cadastrar(@RequestBody UsuarioRequest request) {
+    public ResponseEntity<UsuarioResponse> cadastrar(@RequestBody UsuarioRequest request) {
         return ResponseEntity.ok(usuarioService.cadastrar(request));
     }
 }
